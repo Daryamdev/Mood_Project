@@ -7,7 +7,7 @@ Each time you click a mood button, a random track is shown with a link to listen
 
 - 9 moods to choose from (happy, sad, chill, angry, etc.)
 - Each mood returns a random song from a preset list
-- Frontend in HTML/CSS/JavaScript
+- Frontend in HTML/TailwindCSS/JavaScript
 - Backend built with FastAPI
 - Live Spotify links
 
