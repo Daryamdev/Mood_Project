@@ -22,6 +22,7 @@ Each time you click a mood button, a random track is shown with a link to listen
 - Mood buttons trigger a fetch request to FastAPI
 - FastAPI returns a random song from the mood’s list
 - Frontend displays song title + Spotify link
+- Jinja2 renders the main HTML template served by FastAPI
 
 
 
