@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Your Mood Song</title>
+    <link href="/static/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <style>
+      h1 {
+        font-family: 'Dancing Script', cursive;
+      }
+      .note {
+  position: absolute;
+  bottom:0;
+  font-size: 28px;
+  color: white;
+  z-index: 50;
+  pointer-events: none;
+  animation: float 8s linear forwards;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}
+
+    </style>
+  </head>
+  <body class="min-h-screen bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 flex flex-col items-center p-8 gap-6 overflow-x-hidden">
+    
+    
+    <h1 class="text-white text-4xl md:text-5xl font-semibold text-center">
+      Let the music match your soul
+    </h1>
+
+    
+    <div class="flex flex-wrap justify-center gap-4 px-2">
+      <button class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-white font-semibold rounded-lg shadow-md transition"
+      data-mood="happy">
+        😊 Happy Vibes
+      </button>
+      <button class="px-4 py-2 bg-blue-400 hover:bg-blue-500 text-white font-semibold rounded-lg shadow-md transition"
+      data-mood="sad">
+        😢 Sad & Deep
+      </button>
+      <button class="px-4 py-2 bg-red-500 hover:bg-red-600 text-white font-semibold rounded-lg shadow-md transition"
+      data-mood="angry">
+        😤 Rage Mode
+      </button>
+      <button class="px-4 py-2 bg-purple-400 hover:bg-purple-500 text-white font-semibold rounded-lg shadow-md transition"
+      data-mood="chilly">
+        😌 Chill & Relax
+      </button>
+      <button class="px-4 py-2 bg-pink-400 hover:bg-pink-500 text-white font-semibold rounded-lg shadow-md transition"
+      data-mood="romantic">
+        💖 Romantic
+      </button>
+      <button class="px-4 py-2 bg-gray-700 hover:bg-gray-800 text-white font-semibold rounded-lg shadow-md transition"
+      data-mood="boss">
+        😎 Boss Energy
+      </button>
+      <button class="px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold rounded-lg shadow-md transition"
+      data-mood="chaos">
+        ⚡ Chaotic Energy
+      </button>
+      <button class="px-4 py-2 bg-teal-400 hover:bg-teal-500 text-white font-semibold rounded-lg shadow-md transition"
+      data-mood="dreamy">
+        🌙 Dreamy Mood
+      </button>
+      <button class="px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-lg shadow-md transition"
+      data-mood="rock'n'roll">
+       Rock'n'Roll
+      </button>
+    </div>
+    <div id="result" class ="mt=10 text-white text-xl font-semibold"> </div>
+    <ul id="songList" class="text-white text-lg mt-4 space-y-2 text-center"></ul>
+<script src="/static/java.js"></script> 
+  </body>
+</html>
