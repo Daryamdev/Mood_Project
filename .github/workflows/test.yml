@@ -27,4 +27,4 @@ jobs:
         env:
           PYTHONPATH: .
         run: |
-          python -m pytest backend/test.py
+          python -m pytest 
